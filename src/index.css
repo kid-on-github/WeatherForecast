@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;600&display=swap');
 
-
 :root{
-  --width: calc(45vw + 100px);
-  --max-width: 490px;
+  --width: calc(45vw + 150px);
+  --max-width: 540px;
   --offWhite: #cfcfcf;
+  --themeColor: rgba(0,0,0,.85);
 }
 
 * {
@@ -16,6 +16,19 @@ body{
   margin: 0;
 }
 
+p{
+  font-weight: 400;
+  font-size: 20px;
+}
+
+h1{
+  margin:0 0 5px 0;
+}
+
+h5{
+  margin:0;
+}
+
 .App{
   position: absolute;
   min-width: 100%;
@@ -23,23 +36,20 @@ body{
   background:#6d6179;
   background: rgba(0,0,0,.85);
   background-attachment: fixed;
-  padding: 75px 0 100px 0;
+  padding: 0px 0 100px 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-
-.Input{
+#Input{
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  background-color: white;
+  padding:50px 0;
 }
 
 input{
+  color: var(--themeColor);
   background-color: transparent;
   border: none;
   outline: none;
@@ -48,23 +58,43 @@ input{
   flex: 1 1;
   width: var(--width);
   max-width: var(--max-width);
-  border-bottom:2px solid var(--offWhite);
+  border-bottom:2px solid var(--themeColor);
   margin: 10px 0;
 }
 
 input::placeholder{
-  color:rgba(207, 207, 207, .3);
-
+  color:rgba(207, 207, 207, 1);
   background-color: transparent;
 }
 
+#link{
+  margin:20px auto;
+  width: var(--width);
+  max-width: var(--max-width);
+  text-align: left;
+}
+
+a{
+  color: var(--themeColor);
+  font-size: 20px;
+  text-align: left;
+  border: 2px solid var(--themeColor);
+  padding: 4px 7px;
+  border-radius: 5px;
+  text-decoration: none;
+  opacity: .5;
+  transition: all .15s;
+}
+
+a:hover{
+  opacity: 1;
+}
 
 #Summary{
   display: flex;
   flex-flow: column nowrap;
   justify-content: start;
   align-items: start;
-
   width: var(--width);
   max-width: var(--max-width);
   margin: 75px auto;
@@ -72,14 +102,6 @@ input::placeholder{
 
 #Summary > p{
   margin:0;
-}
-
-
-
-
-p{
-  font-weight: 400;
-  font-size: 20px;
 }
 
 .DayRow, #Accessories{
@@ -90,21 +112,24 @@ p{
   align-items: center;
 }
 
-
 .DayRow > p, #Accessories > p{
   text-align: left;
-  width: 100px;
-  margin:0 40px;
+  width: 150px;
+  padding:0 0px 0 0px;
   
+}
+
+#Accessories{
+  width: var(--width);
+  max-width: var(--max-width);
+  margin: auto;
+  justify-content: start;
 }
 
 .subTitle{
   font-weight: 600;
   font-size: 25px;
 }
-
-
-
 
 img{
   height:15vw;
