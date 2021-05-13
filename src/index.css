@@ -135,3 +135,7 @@ img{
   height:15vw;
   max-height:130px;
 }
+
+#Message{
+  text-align: center;
+}
