@@ -1,6 +1,7 @@
 # Weather Forecast
 
 ### This is a ReactJS project built to demonstrate my frontend development abilities.
+http://kid-on-github.github.io/WeatherForecast
 
 #### Problem: 
 When I travel I never know what to pack. Given some location, retrieve the weather. It is fine to assume everyone is traveling for 5 days from today. In addition, suggest types of clothes to pack for each day. For example, if the weather is going to be 90 one day and 20 the next day. The traveler will need to pack shorts, a t-shirt, and warm clothes.
